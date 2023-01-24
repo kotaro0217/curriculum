@@ -1,0 +1,38 @@
+/* body {
+  font-family: Arial, sans-serif;
+  font-family: フォントファミリー名, 総称フォント名;
+  }
+  
+p {
+  margin-bottom: 10%;
+}
+
+.btn{
+  margin-left: 5%;
+}
+
+.button {
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+  border: 2px solid red;
+  padding:2% 3%;
+  text-decoration:none;
+  transition-property :background;
+  transition-delay :3s;
+  transition-timing-function :ease;
+  transition-duration :2s;
+}
+
+.button:hover{
+  color: white; 
+  background-color: violet;
+  border: 2px solid blue; 
+  transition-property:background;
+  transition-delay :0.5s;
+  transition-timing-function :ease;
+  transition-duration :0.8s;
+} */
+
+
+/* セレクタはカンマで区切ると複数指定可能 */
+

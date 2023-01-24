@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 70%;
+  margin: 30px auto;
+  position: relative;
+  /* background-color: red; */
+  /* position: relative; */
+}
+
+.front-cover {
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900; */
+  font-size: 50px;
+  color: #ffffff;
+  /* background-color: rgba(119, 136, 153, 0.308); */
+  background-color: red;
+  opacity: 0.2;
+  padding: 300px 150px;
+  /* width: 70%;
+  height: 10; */
+  text-align: center;
+
+  /* position z-index設定 */
+  z-index: 2;
+  /* position: relative; */
+}
+
+img {
+  width: 70%;
+  height: auto;
+
+  /* position z-index設定 */
+  position: absolute;
+  bottom: 675px;
+  z-index: 1;
+}
+
+.shadow {
+  padding: 300px 95px;
+  width: 54%;
+  height: auto;
+  background-color: #b3c4d4;
+
+  /* position z-index設定 */
+  position: relative;
+  bottom: 1200px;
+  left: 15px;
+  z-index: 0;
+}

@@ -1,0 +1,56 @@
+/* .parent{
+  color:red;
+} */
+/* 
+.parent{
+  padding:20px;
+  border: solid 1px black;
+}
+
+.child{
+  padding:inherit;
+  border: inherit;
+  font-size: 40px;
+} */
+
+body{
+  background-color: yellow;
+}
+
+@media screen and (max-width:500px){
+  body {
+    background-color: red;
+  }
+  .sp{
+    color:yellow;
+    font-size:50%;
+  }
+}
+
+@media screen and (min-width:1000px){
+  body {
+    background-color: skyblue;
+  }
+  .sp{
+    color:white;
+    font-size:200%;
+  }
+}
+
+.img{
+  display:flex;
+  justify-content: space-around;
+}
+img{
+  width:300px;
+  height: auto;
+}
+
+
+@media screen and (max-width:528px){
+  .img{
+    display:inline-block;
+    box-sizing: border-box;
+    padding:20%;
+  }
+}

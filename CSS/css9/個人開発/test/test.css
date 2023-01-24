@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+header {
+  font-size:15px;
+  border-bottom: #111 2px solid;
+  background-color:white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  /* padding: 0 60px; */
+  /* position: relative; */
+}
+
+.navbar {
+  width: 100%;
+  margin:0 0 0 auto;
+  padding:auto 0;
+  position: relative;
+  /* ここ */
+}
+
+.nav{
+  position: absolute;
+  top: 70px;
+  background-color:#ffffff;
+  display:flex;
+  width:max-content;
+  margin-left:800px;
+  /* background-color:pink; */
+}
+
+ul,li {
+  padding: 2px;
+  margin: 0;
+  font-size:auto;
+}
+
+li{
+  list-style: none;
+  padding: 20px;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.logo {
+  width:25px;
+  height:50px;
+  margin:10px 0 400px 0;
+}
+
+.pull-down-list{
+  color: #111;
+  font-size: 24px;
+}
+
+.contents{
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.list-status{
+  width: 230px;
+  position: absolute;
+  right:70px;
+}
+
+/* 
+.hidden{
+  display:none
+} */
+
+/* トップページのメインエリア */
+.top-area {
+  background-image:url("images/cafe100.jpg");
+  background-size:cover;
+  width: auto;
+  height: 600px;
+  padding-top:150px;
+}
+
+.top-area p {
+  font-size:80px;
+  margin:20px 0 0 20px;
+}
+
+.top-area div {
+  font-size:25px;
+  color:rgb(0, 0, 0);
+  width:max-content;
+  height: max-content;
+  margin:300px 30px 0 20px;
+  background-color: rgb(211, 198, 198);
+  /* opacity:0.7; */
+}
+
+.main-area{
+  display: flex;
+  width: max-content;
+  background-color: rgb(204, 205, 218);
+}
+
+.center-area{
+  margin:10px 2px;
+  background-color: white;
+  /* background-image:url("images/sample4.jpeg"); */
+}
+
+.left-area ,.right-area {
+  width:250px;
+  height: max-content;
+}
+
+.menu-title ,.lunch-time ,.dinner-time{
+  font-size:20px;
+  color:#111;
+  background-color: white;
+  border:pink 2px solid;
+  width:max-content;
+  height:max-content;
+  margin:10px 0 0 20px;
+  padding:4px;
+}
+
+.top-content, .bottom-content {
+  color:black;
+  width:935px;
+}
+
+#images-list, #images-list2 {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image1,.image2,.image3{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-top: 30px;
+  border: rgb(221, 179, 179) 3px solid ;
+  transition-duration: 1s;
+}
+
+/* .image1,.image2,.image3:hover {
+  opacity: 0.6;
+  transition-duration: 0.3s; */
+}
+
+.left-text, .center-text, .right-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.money {
+  padding:0 0 0 20px;
+}
+
+
+/* お知らせ */
+/* .texts {
+  width: 100%;
+  height:fit-content;
+  background-color: white;
+  border:black 4px solid;
+}
+
+.event {
+  display:list-item;
+  font-size: 20px;
+  color: black;
+}
+
+.day{
+  color: orange;
+} */
+
+/* アイテムスライダー */
+.item-sliders {
+  height: max-content;
+  width: 100%;
+  background-color: pink;
+  
+}
+
+.text {
+  display:inline-block;
+
+}

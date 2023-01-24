@@ -1,0 +1,215 @@
+/* 課題：NEWアイコンを作る */
+/* width 200px, height 200px の正方形を作り、背景色を適当に決める。positionはrelativeで設定しておく。 */
+.box1 {
+  width: 200px;
+  height: 200px;
+  background: #353535;
+  position: relative;
+}
+
+/* 疑似要素で"NEW"という文字をつくる。背景色と文字の色は適当に決める。position absolute で top 0, left 0 で左上に配置。padding 入れて余白を作るときれいになる。 */
+
+.box1::before {
+  content: "NEW";
+  background-color: orange;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+}
+
+/* CSS基礎6
+ボックスの動かし方 */
+/* 課題：八角形を作る */
+/* 正方形のボックスを2つ用意する。ここでは width と height は100pxで設定している。
+背景色は適当に決める。position は relative を設定しているが、ここではなくても良い。
+両方でmargin を設定しているのは、見やすくするためなので気にしなくてもよい。 */
+
+/* box2は rotate で45度回転させておく。 */
+.box2 {
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 100px;
+  height: 100px;
+  background: #1383ca;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+/* box3は translateでY軸を調整して、正八角形になるようにする。 */
+.box3 {
+  margin-left: 30px;
+  width: 100px;
+  height: 100px;
+  background: #1383ca;
+  position: relative;
+  transform: translate(0px, -100px);
+}
+
+/* CSS基礎７  参考サイト：https://mukolog.com/css-basic-transition/ */
+/* 課題：transition を使ってみる */
+/* 両方とも position relative を設定してるがここでは無くてもよい。 */
+
+/* box4は正方形を作り、背景色を適当に決める。transition-duraction で3秒かけて色を変えるように設定。
+背景色を変えたいので、transition-property で background を設定する。 */
+.box4 {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background: #1383ca;
+  position: relative;
+  transition-duration: 3s;
+  transition-property: background;
+}
+
+/* ホバーしたら適当な色に変える */
+.box4:hover {
+  background: #ca137f;
+}
+
+/* box5は、正方形を作り、背景色を適当に決める。横幅を伸ばし、回転させたいので transition で width と transform を設定。 */
+.box5 {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background: #1383ca;
+  position: relative;
+  transition: width 2s ease 1s, transform 1.5s ease-out 0.5s;
+}
+
+.box5:hover {
+  /* マウスオーバーすると、1秒後に横幅が2秒かけて「ease」の動きで300pxになる。 */
+  width: 300px;
+  /* マウスオーバーすると、0.5秒後に1.5秒かけて「ease-out」の動きで、180度回転する。 */
+  transform: rotate(180deg);
+}
+
+/* CSS基礎8
+カリキュラムのコードをほぼそのまま使ってますが、多少変えてます。 */
+/* ハンバーガーメニューのアイコンを作る。width と height を設定し正方形を作り背景色を適当に設定。
+position fixed で top right の設定をし右上に設定。
+
+display flex, justify-content center, align-items center で中央に配置。
+z-index で一番下になるように設定。cursor pointer でホバーしたときにカーソルが出てくる。 */
+.menu-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #3584bb;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+ 
+
+/* ハンバーガーメニューのアイコンをつくる。3本つくるので疑似要素を用いて、content を空にし、display block を設定しているが、ここではなくてもよい。width と height で長さと太さを設定し、border-radius で丸みをつける。background-color で色を適当に決め、position absolute を設定しておく。 */
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+
+/* ハンバーガーメニューのアイコンの棒の配置を調整。 */
+.menu-btn span::before {
+  bottom: 8px;
+}
+
+/* ハンバーガーメニューのアイコンの棒の配置を調整。 */
+.menu-btn span::after {
+  top: 8px;
+}
+
+/* ハンバーガーメニューのアイコンの×印をつくるが、1本いらないため1本は見えなくしておく。 */
+#menu-btn-check:checked~.menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* ×印をつくるのに、1本は45度回転させる。先程 bottom の配置を動かしていたので0に戻す。 */
+#menu-btn-check:checked~.menu-btn span::before {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+
+/* ×印をつくるのに、もう1本はさっきとは逆側に45度回転させる。先程 top の配置を動かしていたので0に戻す。 */
+#menu-btn-check:checked~.menu-btn span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* チェックボックスを非表示 */
+#menu-btn-check {
+  display: none;
+}
+
+/* メニューのサイズを調整し、top 0 left 100% にすることで、右から出てくるように見える。
+z-index で menu-btn より上にしておく。padding で 位置を調整。
+
+box-sizing でレイアウトを崩さないようにする。  */
+.menu-content {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+  padding: 60px 5%;
+  box-sizing: border-box;
+}
+
+/* クリックしたときのメニューをつくる。left 70% を設定し、右の30%に表示するようようにする。
+背景色も適当に決める。transition でスーッと出てくるようにする。 */
+#menu-btn-check:checked~.menu-content {
+  left: 70%;
+  background-color: #3584bb;
+  /* アニメーション */
+  transition: all .3s linear;
+}
+
+/* メニュー内の項目のliタグに border-bottom で下線をつける。
+「・」は list-style で消しておく。 */
+.menu-content ul li {
+  border-bottom: solid 1px #fff;
+  list-style: none;
+}
+
+/* メニュー内の項目のaタグをブロック要素にして、width で幅を調整し、文字の大きさも変える。
+box-sizing でレイアウト崩れを防ぐ。
+文字の色や padding を調整し、position relativeを設定しておく。
+最後にaタグ特有の下線は消しておく。 */
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 9px 15px 10px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+/* メニュー内の→を疑似要素でつくる。
+content は空にし、width と height を設定し、border-top と border-right で 「 の逆をつくる。45度回転させると矢印の形になるので、
+あとはposition absolute で位置を調整する。 */
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}

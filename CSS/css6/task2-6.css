@@ -1,0 +1,39 @@
+body{
+  margin-top:20%;
+  margin-left:10%;
+  padding-bottom:20%;
+  
+}
+
+.z_index{
+  position:relative;
+  width:100%;
+  height: 100%;
+  background-color: #6666;
+}
+
+img{
+  width:50%;
+  height: auto;
+  position:absolute;
+  z-index:2;
+}
+
+.middle{
+  width:645px;
+  height: 480px;
+  background-color: gray;
+  position:absolute;
+  z-index:3;
+  opacity: 0.2;
+}
+
+.bottom{
+  width:680px;
+  height: 500px;
+  background-color: skyblue;
+  position:absolute;
+  top:20px;
+  left:20px;
+  z-index:1;
+}

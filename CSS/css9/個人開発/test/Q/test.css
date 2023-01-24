@@ -1,0 +1,183 @@
+body {
+  background-image:url("images/sample4.jpeg");
+  font-size: 14px;
+  color: #333;
+  margin: 1px auto;
+}
+
+header {
+  height: 65px;
+  display: flex;
+  padding: 0 60px;
+  background-color:orange;
+  font-size:15px;
+  position: relative;
+}
+
+.logo {
+  width:max-content;
+  height:35px;
+  margin:10px 0 0 40px;
+}
+
+h2,h3{
+  font-size:20px;
+  color:#111;
+  border:pink 2px solid;
+  width:max-content;
+  height:max-content;
+}
+
+.navbar {
+  margin:0 0 0  auto;
+  padding:auto 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+ul,li {
+  padding: 2px;
+  margin: 0;
+  font-size:auto;
+}
+
+li{
+  list-style: none;
+  padding: 20px;
+}
+.heading {
+  width: 50%;
+  margin-left: 30px;
+}
+.navbar {
+  width: 50%;
+}
+.nav-lists {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.red{
+  background-color: red;
+}
+.show-lists{
+  width: 200px;
+  position: absolute;
+  right: 370px;
+  top: 70px;
+  background-color: #ffffff;
+}
+#lists{
+  background-color: red ;
+  color: white;
+  height:25px;
+
+}
+.pull-down-list{
+  padding: 15px 35px 15px 15px;
+  border: 1px solid #eee;
+}
+.contents{
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.list-status{
+  width: 230px;
+  position: absolute;
+  right:70px;
+}
+
+.hidden{
+  display:none
+}
+/* header */
+
+/* @keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 2;
+  }
+} */
+
+/* lanch-time */
+.menu-title ,.lunch-time ,.dinner-time{
+  font-size:20px;
+  color:#111;
+  background-color: white;
+  border:pink 2px solid;
+  width:max-content;
+  height:max-content;
+  margin:10px 0 0 0;
+}
+
+
+
+.top-content {
+  height:500px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(238, 225, 209);
+  /* opacity: 0.9; */
+  color:black;
+  /* background:linear-gradient(to right, blue, pink); */
+}
+
+.image1,.image2,.image3{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.right-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.center-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.left-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.money {
+  padding:0 0 0 20px;
+}
+
+.bottom-content {
+  height:500px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: pink;
+  /* opacity: 0.9; */
+  /* background:linear-gradient(to right, blue, pink); */
+}
+
+.texts {
+  width: 100%;
+  height:fit-content;
+  background-color: white;
+  border:black 4px solid;
+}
+
+.event {
+  display:list-item;
+  font-size: 20px;
+  color: black;
+}
+
+.day{
+  color: orange;
+}

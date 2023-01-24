@@ -1,0 +1,18 @@
+header {
+  border: 2px solid;
+  border-color:red;
+}
+
+.top-content {
+  background-color:skyblue;
+  padding: 20px;
+  height: 250px;
+  width: 50%;
+}
+
+.bottom-content {
+  background-color:pink;
+  margin: 20px;
+  height: 150px;
+  width: 30%;
+}

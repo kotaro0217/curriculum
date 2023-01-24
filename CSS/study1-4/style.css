@@ -1,0 +1,38 @@
+body{
+  background-color: white;
+  height:100%;
+}
+
+header{
+  height: 80px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+
+.parent{
+  width :360px;
+  height: 360px;
+  background-color: pink;
+  margin: 40px;
+  position:relative;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.child{
+  width :200px;
+  height: 200px;
+  background-color: skyblue;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+footer{
+  height: 800px;
+  width: 100%;
+  background-color:lightgray;
+}
+

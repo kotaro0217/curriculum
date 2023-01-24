@@ -1,0 +1,152 @@
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 1px auto;
+}
+
+/* header */
+header {
+  height: 65px;
+  display: flex;
+  padding: 0 60px;
+  background-color:orange;
+  font-size:15px;
+  position: relative;
+}
+
+.logo {
+  width:max-content;
+  height:35px;
+  margin:10px 0 0 40px;
+}
+
+h2,h3{
+  font-size:20px;
+  color:#111;
+  border:pink 2px solid;
+  width:max-content;
+  height:max-content;
+}
+
+.navbar {
+  margin:0 0 0  auto;
+  padding:auto 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+ul,li {
+  padding: 2px;
+  margin: 0;
+  font-size:auto;
+}
+
+li{
+  list-style: none;
+  padding: 20px;
+}
+.heading {
+  width: 50%;
+  margin-left: 30px;
+}
+.navbar {
+  width: 50%;
+}
+.nav-lists {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.red{
+  background-color: red;
+}
+.show-lists{
+  width: 200px;
+  position: absolute;
+  right: 370px;
+  top: 70px;
+  background-color: #ffffff;
+}
+#lists{
+  background-color: red ;
+  color: white;
+  height:25px;
+
+}
+.pull-down-list{
+  padding: 15px 35px 15px 15px;
+  border: 1px solid #eee;
+}
+.contents{
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.list-status{
+  width: 230px;
+  position: absolute;
+  right:70px;
+}
+
+.hidden{
+  display:none
+}
+
+/* 入力フォーム */
+.contact {
+  height: 700px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:10px 0 0 0 ;
+}
+.contact-form {
+  width: 600px;
+}
+
+.company-form {
+  margin: 0 auto 10px;
+}
+
+.name-form {
+  margin: 0 auto 10px;
+}
+.tel-form {
+  margin: 0 auto 10px;
+}
+.message-form {
+  height: 150px;
+  margin: 0 auto 30px;
+}
+
+
+.company-form,
+.name-form,
+.tel-form,
+.message-form {
+  width: 500px;
+  padding: 15px;
+  border: 1px solid white;
+  display: block;
+}
+.send {
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+  background-color: orange;
+  display: block;
+}
+
+img{
+  text-align: center;
+  margin-top: 50px;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+}

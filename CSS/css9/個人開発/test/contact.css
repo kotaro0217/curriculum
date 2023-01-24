@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+header {
+  font-size:15px;
+  border-bottom: #111 2px solid;
+  background-color:white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  /* position: fixed; */
+  /* padding: 0 60px; */
+  /* position: relative; */
+}
+
+.navbar {
+  width: 100%;
+  margin:0 0 0  auto;
+  padding:auto 0;
+  position: relative;
+  /* ここ */
+}
+
+.nav{
+  position: absolute;
+  top: 70px;
+  background-color:#ffffff;
+  display:flex;
+  width:max-content;
+  margin-left:800px;
+  /* background-color:pink; */
+}
+
+ul,li {
+  padding: 2px;
+  margin: 0;
+  font-size:auto;
+}
+
+li{
+  list-style: none;
+  padding: 20px;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.logo {
+  width:25px;
+  height:50px;
+  margin:-40px 0 400px 0;
+}
+
+.pull-down-list{
+  color: #111;
+  font-size: 24px;
+}
+
+/* 入力フォーム */
+.contact {
+  height: 1000px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  width: 100%;
+}
+
+.company-form {
+  margin: 0 auto 10px;
+}
+
+.name-form {
+  margin: 0 auto 10px;
+}
+.tel-form {
+  margin: 0 auto 10px;
+}
+.message-form {
+  height: 150px;
+  margin: 0 auto 30px;
+}
+
+.company-form,
+.name-form,
+.tel-form,
+.message-form {
+  width: 500px;
+  padding: 15px;
+  border: 1px solid white;
+  display: block;
+}
+
+.send {
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+  background-color: orange;
+  display: block;
+}
+
+img{
+  text-align: center;
+  margin-top: 50px;
+  animation-name:fade;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
