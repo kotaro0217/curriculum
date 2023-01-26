@@ -1,39 +1,75 @@
 body{
-  margin-top:20%;
-  margin-left:10%;
-  padding-bottom:20%;
-  
+  margin:10% 0 0 10%;
+}
+/* 2D化 */
+/* .box{
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 2px solid black;
+  transform: perspective(500px) rotateY(45deg);
+  transform-style: flat;
 }
 
-.z_index{
+.item{
+  width: 200px;
+  height: 150px;
+  background-color: lightyellow;
+  border: 2px solid black;
+  transform: rotateY(40deg);
+} */
+
+/* 3D化 */
+/* .box{
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 2px solid black;
+  transform: perspective(500px) rotateY(50deg);
+  transform-style: preserve-3d;
+}
+
+.item{
+  width: 200px;
+  height: 150px;
+  background-color: lightyellow;
+  border: 2px solid black;
+  transform: rotateX(40deg);
+} */
+
+/* 課題6 */
+
+.box {
+  display:block;
   position:relative;
+  margin:30px auto 0;
+  width:100px;
+  height:100px;
+  transform-style:preserve-3d;
+  transform:rotateX(-25deg) rotateY(-45deg); /* ここで四角の角度を調整できる */
+}
+
+.box .item {
+  position:absolute;
+  left:0;
+  right:0;
+  box-sizing:border-box;
+  border:3px solid rgb(255, 45, 45);
   width:100%;
-  height: 100%;
-  background-color: #6666;
+  height:100%;
 }
 
-img{
-  width:50%;
-  height: auto;
-  position:absolute;
-  z-index:2;
+/* 上 */
+.box .item:nth-child(1) {
+  transform:translate3d(0, -50px, 0) rotateX(-90deg);
 }
 
-.middle{
-  width:645px;
-  height: 480px;
-  background-color: gray;
-  position:absolute;
-  z-index:3;
-  opacity: 0.2;
+/* 左 */
+.box .item:nth-child(2) {
+  transform:translate3d(0, 0, 50px);
 }
 
-.bottom{
-  width:680px;
-  height: 500px;
-  background-color: skyblue;
-  position:absolute;
-  top:20px;
-  left:20px;
-  z-index:1;
+/* 右 */
+.box .item:nth-child(3) {
+  transform:translate3d(50px, 0, 0) rotateY(90deg);
 }
