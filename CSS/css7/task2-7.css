@@ -1,39 +1,19 @@
 /* CSS基礎７
-  参考サイト：https://mukolog.com/css-basic-transition/ */
+参考サイト：https://mukolog.com/css-basic-transition/ */
+
+/* 課題：transition を使ってみる */
+/* 両方とも position relative を設定してるがここでは無くてもよい。 */
+/* 動きはgif参照 */
  
-  /* 課題：transition を使ってみる */
- 
-  /* 両方とも position relative を設定してるがここでは無くてもよい。 */
- 
-/* box4は正方形を作り、背景色を適当に決める。transition-duraction で3秒かけて色を変えるように設定。背景色を変えたいので、transition-property で background を設定する。 */
-.box4 {
-  margin-top: 30px;
-  width: 300px;
-  height: 300px;
-  background: skyblue;
-  position: relative;
-  transition-duration: 3s;
-  transition-property:all;
-}
- 
-/* ホバーしたら適当な色に変える */
-.box4:hover {
-  background: #ca137f;
-}
- 
-/* box5は、正方形を作り、背景色を適当に決める。横幅を伸ばし、回転させたいので transition で width と transform を設定。 */
-.box5 {
-  margin-top: 30px;
-  width: 100px;
-  height: 100px;
-  background: #1383ca;
-  position: relative;
-  transition: width 2s ease 1s, transform 1.5s ease-out 0.5s;
-}
- 
-.box5:hover {
-  /* マウスオーバーすると、1秒後に横幅が2秒かけて「ease」の動きで300pxになる。 */
-  width: 300px;
-  /* マウスオーバーすると、0.5秒後に1.5秒かけて「ease-out」の動きで、180度回転する。 */
-  transform: rotate(180deg);
-}
+/* box1は正方形を作り、背景色を決める。
+ブラウザ上での動作内容：
+カーソルがbox1に重なった時に正方形の色が2秒かけて変形後の色に変化する。
+カーソルがbox1から離れた時は変化した色から元の色に2秒かけて変化する。
+
+/* box2は正方形を作り、背景色を決める。
+ブラウザ上での動作内容：
+カーソルがbox2に重なった時にbox2の正方形が横長の長方形に変形。
+カーソルがbox2から離れた時は長方形から正方形に変形。
+伸縮時は180°回転しながら変形。
+変化時間に指定はありません
+

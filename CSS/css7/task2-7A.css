@@ -1,0 +1,38 @@
+/* CSS基礎７
+  参考サイト：https://mukolog.com/css-basic-transition/ */
+ 
+  /* 課題：transition を使ってみる */
+ 
+  /* 両方とも position relative を設定してるがここでは無くてもよい。 */
+ 
+/* box4は正方形を作り、背景色を適当に決める。transition-duraction で3秒かけて色を変えるように設定。背景色を変えたいので、transition-property で background を設定する。 */
+.box1 {
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  background: skyblue;
+  position: relative;
+  transition-duration: 2s;
+}
+ 
+/* ホバーしたら適当な色に変える */
+.box1:hover {
+  background: #ca137f;
+}
+ 
+/* box5は、正方形を作り、背景色を適当に決める。横幅を伸ばし、回転させたいので transition で width と transform を設定。 */
+.box2 {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background: #1383ca;
+  position: relative;
+  transition: width 1s ease 0.7s, transform 1.2s ease-out 0.5s;
+}
+ 
+.box2:hover {
+  /* マウスオーバーすると、1秒後に横幅が2秒かけて「ease」の動きで300pxになる。 */
+  width: 300px;
+  /* マウスオーバーすると、0.5秒後に1.5秒かけて「ease-out」の動きで、180度回転する。 */
+  transform: rotate(180deg);
+}
