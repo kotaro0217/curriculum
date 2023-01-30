@@ -1,0 +1,104 @@
+body {
+  background-image:url("images/sample4.jpeg");
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(182, 248, 253);
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width:max-content;
+  height:40px;
+  margin:0 0 0 40px;
+}
+
+h2,h3{
+  font-size:20px;
+  color:#111;
+  background-color: white;
+  border:pink 2px solid;
+  width:max-content;
+  height:max-content;
+}
+
+.menu {
+  margin:0 0 0  auto;
+  padding:auto 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  color:white;
+}
+
+.top-content {
+  height:500px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(238, 225, 209);
+  /* opacity: 0.9; */
+  color:black;
+  /* background:linear-gradient(to right, blue, pink); */
+}
+
+.image1,.image2,.image3{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.right-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.center-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.left-text {
+  font-size:20px;
+  text-align: center;
+}
+
+.money {
+  padding:0 0 0 20px;
+}
+
+.bottom-content {
+  height:500px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: pink;
+  /* opacity: 0.9; */
+  /* background:linear-gradient(to right, blue, pink); */
+}
+
+.texts {
+  width: 100%;
+  height:fit-content;
+  background-color: white;
+  border:black 4px solid;
+}
+
+.event {
+  display:list-item;
+  font-size: 20px;
+  color: black;
+}
+
+.day{
+  color: orange;
+}

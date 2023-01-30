@@ -1,0 +1,55 @@
+.parents {
+  width: 100%;
+  height: 600px;
+  background:skyblue;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.parent {
+  width: 250px;
+  height: 250px;
+  background:orange;
+  position: relative;
+  opacity: 0.8;
+}
+
+.child {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  color:#e85298;
+}
+
+
+/* パターン２ */
+
+/* .parents {
+  width: 100%;
+  height: 600px;
+  background:skyblue;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  position:absolute;
+}
+
+.parent {
+ width: 250px;
+ height: 250px;
+ background:orange;
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ position: relative;
+}
+
+.child {
+  width: 70%;
+  height: 70%;
+} */
+
+

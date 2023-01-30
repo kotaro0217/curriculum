@@ -1,0 +1,29 @@
+body {
+  background-color:rgb(245, 188, 228);
+}
+
+div {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+ol {
+  font-size: 18px;
+  color:rgb(101, 88, 251);
+}
+
+.abc {
+  color:rgb(244, 255, 26);
+}
+
+#abc {
+  color:rgb(255, 0, 0);
+}

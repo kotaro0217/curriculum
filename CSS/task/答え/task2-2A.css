@@ -1,0 +1,42 @@
+body{
+  background-color: #9999;
+  width:100%;
+  height:100%;
+  margin:10%;
+}
+
+ol li a{
+  text-decoration: none;
+}
+ol li{
+  margin:40px 0;
+}
+
+.main {
+  list-style: none;
+  background-color:pink;
+  border:yellow 15px solid;
+  width: 50%;
+  height: auto;
+  margin:0 5%;
+}
+
+.area1,.area2,.area3{
+  color:white;
+  width:70px;
+}
+
+.area1 {
+  background-color:black;
+  opacity: 0.6;
+}
+
+/* 左上に向かうグラデーション */
+.area2 {
+  background:linear-gradient(to right,blue,lightgreen);
+}
+
+/* 右へ向かうグラデーション */
+.area3 {
+  background:linear-gradient(to top left,red,orange,yellow);
+}
