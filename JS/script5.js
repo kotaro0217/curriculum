@@ -12,11 +12,12 @@
 
 
 var x = 15;
-var aaa;
+var x = aaa;
 if (x > 15) {
 aaa = "１６以上の数字です。";
 } else if (x > 5) {
 aaa = "６から１５までの数字です。";
 } else {
 aaa = "５以下の数字です。";
+console.log("aaa")
 }
